@@ -16,7 +16,7 @@ Python만 설치하면 실행됩니다. 별도 유료 서비스, 회원가입, �
 
 ### Windows
 
-1. [Python 공식 홈페이지](https://www.python.org/downloads/)에서 Python 3.10 이상을 설치합니다. 설치 첫 화면의 **Add python.exe to PATH** 항목을 선택하세요.
+1. Windows 10/11에서는 [Python 공식 홈페이지](https://www.python.org/downloads/)에서 Python 3.10 이상을 설치합니다. **Windows 8.1은 [Python 3.12.10 설치 파일](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe)**을 사용하세요. 설치 첫 화면의 **Add python.exe to PATH** 항목을 선택하면 편리합니다. 체크하지 않았더라도 Python 런처 또는 기본 설치 경로를 통해 실행할 수 있습니다.
 2. GitHub 저장소에서 **Code → Download ZIP**을 눌러 프로그램을 내려받습니다. ZIP 파일을 마우스 오른쪽 버튼으로 눌러 **압축 풀기**를 실행하세요. ZIP 파일 안에서 바로 실행하지 마세요.
 3. 압축을 푼 폴더 안에서 **start.bat** 파일을 더블 클릭합니다.
 4. 검은색 실행 창을 그대로 둔 상태에서 Chrome이나 Edge를 열고 주소창에 **http://localhost:3000** 을 입력합니다. 이 주소는 프로그램을 실행한 내 컴퓨터에서 접속하는 주소입니다.
@@ -100,6 +100,7 @@ python3 server.py
 
 | 증상 | 해결 방법 |
 | --- | --- |
+| 실행 창에 `cho`, `se` 등의 명령 오류가 반복됨 | 최신 `start.bat`로 교체하세요. 이전 실행 파일의 문자 인코딩/줄바꿈 문제를 수정했습니다. 임시로 프로그램 폴더 주소창에 `cmd`를 입력해 연 뒤 `py -3 server.py`를 실행할 수 있습니다. |
 | Python을 찾을 수 없다는 메시지 | Python을 설치하고 **Add python.exe to PATH**를 선택했는지 확인합니다. 설치 후 실행 창을 새로 열어 다시 시도하세요. |
 | 브라우저에 연결할 수 없다고 표시 | 실행 창에 오류가 없는지, 창이 계속 열려 있는지, 주소와 포트 번호가 맞는지 확인합니다. |
 | 다른 폴더에서 실행하면 파일이 없다고 표시 | `server.py`가 들어 있는 폴더에서 실행하거나 `start.bat` / `start.sh`를 사용하세요. |

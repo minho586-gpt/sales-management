@@ -1,0 +1,2 @@
+# Preserve actual CRLF bytes in GitHub ZIPs; recognize CR as a line ending.
+*.bat -text whitespace=cr-at-eol
